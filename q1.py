@@ -1,0 +1,15 @@
+import turtle
+x1,y1 = eval(input("Enter the x1, y1: "))
+x2,y2 = eval(input("Enter the x2, y2: "))
+distance = ((x2-x1)**2 + (y2-y1)**2)**0.5
+turtle.penup()
+turtle.goto(x1,y1)
+turtle.write("P1")
+turtle.pendown()
+turtle.goto(x2,y2)
+turtle.write("P2")
+turtle.penup()
+turtle.goto((x1+x2)/2,(y1+y2)/2)
+turtle.write(distance)
+turtle.hideturtle()
+turtle.done()
